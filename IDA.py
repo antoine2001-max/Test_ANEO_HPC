@@ -269,22 +269,22 @@ class IDA_star():
             self.path.pop()
         return False, mini
             
-tps_moyen = 0    
+#tps_moyen = 0    
 
-h=1
-for k in range(h):
+#h=1
+#for k in range(h):
     
-    tps1 = time.time()
+    #tps1 = time.time()
 
-    fn = IDA_star(root = Node(), graph=graph).find_best_path()
+    #fn = IDA_star(root = Node(), graph=graph).find_best_path()
 
-    tps2 = time.time()
+    #tps2 = time.time()
     
-    tps_moyen += tps2-tps1
+    #tps_moyen += tps2-tps1
 
-tps_moyen = tps_moyen/h
+#tps_moyen = tps_moyen/h
 
-print(tps_moyen)  
+#print(tps_moyen)  
 
 fn = IDA_star(root = Node(), graph=graph).find_best_path()
 
