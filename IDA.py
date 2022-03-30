@@ -274,11 +274,11 @@ tps_moyen = 0
 h=1
 for k in range(h):
     
-    tps1 = time.time()
+    tps1 = time.clock()
 
     fn = IDA_star(root = Node(), graph=graph).find_best_path()
 
-    tps2 = time.time()
+    tps2 = time.clock()
     
     tps_moyen += tps2-tps1
 
