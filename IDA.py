@@ -316,7 +316,7 @@ def plot_schedule(node, critical_path=[]) -> None:
     plt.tight_layout()
 
 print(fn)
-plot_schedule(fn)
+#plot_schedule(fn)
 
 p = fn.parent
 p.successors()
