@@ -308,17 +308,17 @@ p = fn.parent
 p.successors()
 p
 
-import cProfile
-import pstats
+#import cProfile
+#import pstats
 
-root = Node()
-ida_star = IDA_star(root = root, graph=graph)
+#root = Node()
+#ida_star = IDA_star(root = root, graph=graph)
 
-with cProfile.Profile() as pr:
-    final_node = ida_star.find_best_path()
+#with cProfile.Profile() as pr:
+    #final_node = ida_star.find_best_path()
 
-print(final_node)
-stats = pstats.Stats(pr)
-stats.sort_stats(pstats.SortKey.TIME)
-stats.dump_stats(filename='profiling.prof')
-stats.print_stats()
+#print(final_node)
+#stats = pstats.Stats(pr)
+#stats.sort_stats(pstats.SortKey.TIME)
+#stats.dump_stats(filename='profiling.prof')
+#stats.print_stats()
