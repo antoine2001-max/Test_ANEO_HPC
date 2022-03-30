@@ -275,7 +275,7 @@ fn = IDA_star(root = Node(), graph=graph).find_best_path()
 from collections import defaultdict
 from itertools import cycle
 from typing import Dict, Tuple
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import random
 
 def cycle(lst):
