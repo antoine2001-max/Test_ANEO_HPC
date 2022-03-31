@@ -16,7 +16,7 @@ import json
 import math
 
 
-filename = "./smallRandom.json"
+filename = "./smallComplex.json"
 
 
 def n2letter(n):
@@ -44,7 +44,7 @@ def read_data(path):
     print("Data loaded successfully. Number of tasks: " + str(task_count))
 
 
-n_cores = 5
+n_cores = 1
 read_data(filename)
 tasks
 
@@ -318,7 +318,7 @@ class A_star():
 
 root = Node()
 
-h=5
+h=1
 tps_moyen = 0
 
 for i in range(h):
