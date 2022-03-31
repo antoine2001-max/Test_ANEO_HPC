@@ -44,7 +44,7 @@ def read_data(path):
     print("Data loaded successfully. Number of tasks: " + str(task_count))
 
 
-n_cores = 2
+n_cores = 3
 read_data(filename)
 tasks
 
