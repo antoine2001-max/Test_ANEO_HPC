@@ -326,7 +326,7 @@ for i in range(h):
     start = time.time()
     a_star = A_star(root=root, graph=graph)
 
-    final_node = a_star.find_best_path(max_time=10)
+    final_node = a_star.find_best_path(max_time=1000)
     end = time.time()
     tps_moyen += (end-start)
     
