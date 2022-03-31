@@ -4,7 +4,7 @@ from typing import Dict, Tuple
 from itertools import cycle
 from collections import defaultdict
 import pstats
-#import cProfile
+import cProfile
 #import random as rd
 import queue
 import time
@@ -320,17 +320,17 @@ class A_star():
 root = Node()
 a_star = A_star(root=root, graph=graph)
 
-#with cProfile.Profile() as pr:
-    #final_node = a_star.find_best_path(max_time=10)
+with cProfile.Profile() as pr:
+    final_node = a_star.find_best_path(max_time=10)
 
-#print(final_node)
-#stats = pstats.Stats(pr)
-#stats.sort_stats(pstats.SortKey.TIME)
-#stats.dump_stats(filename='profiling.prof')
-#stats.print_stats()
+print(final_node)
+stats = pstats.Stats(pr)
+stats.sort_stats(pstats.SortKey.TIME)
+stats.dump_stats(filename='profiling.prof')
+stats.print_stats()
 
 
-#schedule = final_node.schedule
+schedule = final_node.schedule
 
 
 def cycle(lst) -> str:
