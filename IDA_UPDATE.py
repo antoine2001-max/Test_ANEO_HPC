@@ -1,5 +1,4 @@
 
-import pandas as pd
 import json
 from datetime import datetime
 from copy import deepcopy
@@ -275,26 +274,8 @@ def cycle(lst):
     return x
 
 
-def verify(node):
-    solution_df = pd.DataFrame.from_dict(
-        node.schedule, orient='index', columns=['start', 'end', 'core'])
-    task_df = pd.DataFrame.from_dict(
-        graph.tasks_to_sbl, orient='index', columns=['sbl'])
-    score = solution_df['end'].max()
-    best_time = task_df['sbl'].max()
-    if best_time > score:
-        return False
-
-    for task in solution_df.index:
-        for parent in graph.tasks[task]['Dependencies']:
-            if solution_df.loc[parent]['end'] > solution_df.loc[task]['start']:
-                return False
-    print(score, best_time)
-    return (100*(score - best_time)/best_time)
-
-
 graph = Graph(filename, n_cores, 1)
 final_node = ida_star()
 
 
-verify(final_node)
+
