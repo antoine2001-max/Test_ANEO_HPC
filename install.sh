@@ -2,6 +2,7 @@
 
 sudo apt update -y
 sudo apt install python3-pip -y
+sudo apt install python3-pandas
 pip3 install numpy
 sudo apt-get install python3-matplotlib
 sudo apt-get install -y --no-install-recommends openmpi-bin
