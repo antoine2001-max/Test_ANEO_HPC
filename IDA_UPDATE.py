@@ -9,7 +9,7 @@ from itertools import cycle
 from typing import Dict, Tuple
 import random
 
-filename = "./Downloads/smallRandom.json"
+filename = "smallRandom.json"
 n_cores = 2
 
 def n2letter(n):
