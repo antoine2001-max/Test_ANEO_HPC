@@ -9,7 +9,7 @@ import pstats
 import random as rd
 import queue
 import math
-import numpy as np
+#import numpy as np
 import json
 from copy import deepcopy
 import bisect
