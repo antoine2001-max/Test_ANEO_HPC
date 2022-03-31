@@ -218,7 +218,7 @@ class Node():
 import queue
 import random as rd
 import sys
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 def rdraise(x = 0.1):
     if rd.random() < x:
