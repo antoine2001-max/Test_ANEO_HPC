@@ -331,6 +331,7 @@ for i in range(h):
     tps_moyen += (end-start)
     
 tps_moyen = tps_moyen/h
+print(tps_moyen)
     
 print(final_node)
 
