@@ -318,7 +318,7 @@ class A_star():
 
 root = Node()
 
-h=1
+h=5
 tps_moyen = 0
 
 for i in range(h):
