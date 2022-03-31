@@ -1,20 +1,22 @@
-import cProfile
-import time
-import random
+#import random
 #import matplotlib.pyplot as plt
 from typing import Dict, Tuple
 from itertools import cycle
 from collections import defaultdict
 import pstats
-import random as rd
+#import cProfile
+#import random as rd
 import queue
-import math
-#import numpy as np
-import json
-from copy import deepcopy
+import time
+#from config import filename
 import bisect
+from copy import deepcopy
+import json
+#import numpy as np
+import math
 
-filename = "./smallRandom.json"
+
+filename = "./Downloads/smallRandom.json"
 
 
 def n2letter(n):
@@ -263,6 +265,7 @@ class Node():
 # #Test cost
 # x.cost(a)
 
+
 # #Test h
 # print(r.h())
 # print(x.h())
@@ -310,6 +313,7 @@ class A_star():
 
         raise Exception("No path from root to a terminal node")
 
+
 # A_star(root = Node(), graph=graph).find_best_path()
 
 
@@ -329,7 +333,7 @@ a_star = A_star(root=root, graph=graph)
 #schedule = final_node.schedule
 
 
-def cycle(lst: list[str]) -> str:
+def cycle(lst) -> str:
     x = lst.pop(0)
     lst.append(x)
     return x
@@ -338,9 +342,8 @@ def cycle(lst: list[str]) -> str:
 
 
 print(schedule)
-#plot_schedule(schedule)
 
 
 
 
-#plot_schedule(schedule)
+
