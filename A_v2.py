@@ -335,41 +335,10 @@ def cycle(lst: list[str]) -> str:
     return x
 
 
-def plot_schedule(schedule: Dict[int, Tuple[int, int, int]], critical_path=[]) -> None:
-    colors_by_proc = defaultdict(lambda:
-                                 ['tab:blue', 'tab:orange', 'tab:green', 'tab:purple', 'tab:brown', 'tab:pink', 'tab:gray', 'tab:olive', 'tab:cyan'])
-    for id, (start, end, proc) in schedule.items():
-        # cycle through the colors for this processor
-        color = cycle(colors_by_proc[proc])
-        colors_by_proc[proc].append(color)
-
-        # handle critical path nodes
-        if id in critical_path:
-            critical_kwargs = {
-                'edgecolor': 'red',
-                'lw': 2,
-                'zorder': 100,
-            }
-        else:
-            critical_kwargs = {}
-
-        # blot the bar and text
-        plt.broken_barh([(start, end-start)],
-                        (proc-.4, .8),
-                        facecolors=color,
-                        **critical_kwargs)
-        plt.annotate(str(id),
-                     xy=((start+end)/2, proc),
-                     ha='center',
-                     va='center',
-                     zorder=101)
-    plt.yticks(list(colors_by_proc.keys()), [
-               f'Proc {proc}' for proc in colors_by_proc.keys()])
-    plt.tight_layout()
 
 
 print(schedule)
-plot_schedule(schedule)
+#plot_schedule(schedule)
 
 
 def plot_schedule(self, schedule: dict[int, tuple[int, int, int]], critical_path=[]) -> None:
