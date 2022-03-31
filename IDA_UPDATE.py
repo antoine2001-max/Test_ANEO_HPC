@@ -7,7 +7,7 @@ from collections import defaultdict
 from itertools import cycle
 from typing import Dict, Tuple
 import random
-import math
+import numpy as np
 
 filename = "smallRandom.json"
 n_cores = 2
@@ -258,7 +258,7 @@ def search(stack, bound, depth):
     return False
 
 
-def ida_star(depth=math.inf:
+def ida_star(depth=np.inf):
     bound = graph.h(graph.root)*2
     stack = [graph.root]
     t = search(stack, bound, depth)
