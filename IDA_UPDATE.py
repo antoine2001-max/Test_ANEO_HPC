@@ -273,9 +273,25 @@ def cycle(lst):
     lst.append(x)
     return x
 
+tps_moyen = 0    
 
-graph = Graph(filename, n_cores, 1)
-final_node = ida_star()
+h=1
+    
+for k in range(h):
+    tps1 = time.time()
+
+    graph = Graph(filename, n_cores, 1)
+    final_node = ida_star()
+
+    tps2 = time.time()
+
+    tps_moyen += tps2-tps1
+
+tps_moyen = tps_moyen/h
+
+print(tps_moyen)  
+
+print("----Terminé----")
 
 
 
