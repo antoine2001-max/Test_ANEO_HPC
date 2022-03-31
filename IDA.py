@@ -12,7 +12,7 @@ filename = "./smallRandom.json"
 #filename = "./smallComplex.json"
 #filename = "./MediumComplex.json"
 
-n_cores = 4
+n_cores = 5
 
 print(n_cores)
 print(filename)
