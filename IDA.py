@@ -8,8 +8,8 @@ import time
 
 
 # from config import filename, n_cores
-filename = "./smallRandom.json"
-#filename = "./smallComplex.json"
+#filename = "./smallRandom.json"
+filename = "./smallComplex.json"
 n_cores = 2
 print(filename)
 
