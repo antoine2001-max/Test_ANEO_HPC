@@ -16,7 +16,7 @@ import json
 import math
 
 
-filename = "./Downloads/smallRandom.json"
+filename = "./smallRandom.json"
 
 
 def n2letter(n):
