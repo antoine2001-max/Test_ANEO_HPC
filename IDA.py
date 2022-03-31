@@ -11,7 +11,8 @@ import time
 filename = "./smallRandom.json"
 #filename = "./smallComplex.json"
 #filename = "./MediumComplex.json"
-n_cores = 3
+
+n_cores = 4
 
 print(n_cores)
 print(filename)
@@ -280,14 +281,14 @@ class IDA_star():
 tps_moyen = 0    
 
 h=5
-for k in range(h):
     
+for k in range(h):
     tps1 = time.time()
 
     fn = IDA_star(root = Node(), graph=graph).find_best_path()
 
     tps2 = time.time()
-    
+
     tps_moyen += tps2-tps1
 
 tps_moyen = tps_moyen/h
