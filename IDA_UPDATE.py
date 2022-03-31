@@ -10,8 +10,8 @@ import random
 import time
 
 
-filename = "smallRandom.json"
-n_cores = 4
+filename = "smallComplex.json"
+n_cores = 2
 print(n_cores)
 
 def n2letter(n):
