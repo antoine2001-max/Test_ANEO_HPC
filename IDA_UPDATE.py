@@ -11,7 +11,7 @@ import time
 
 
 filename = "smallRandom.json"
-n_cores = 2
+n_cores = 3
 
 def n2letter(n):
     '''0 to 'a', 1 to 'b', ... '''
