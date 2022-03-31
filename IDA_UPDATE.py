@@ -7,6 +7,7 @@ from collections import defaultdict
 from itertools import cycle
 from typing import Dict, Tuple
 import random
+import time
 
 
 filename = "smallRandom.json"
