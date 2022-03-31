@@ -1,7 +1,7 @@
 import cProfile
 import time
 import random
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from typing import Dict, Tuple
 from itertools import cycle
 from collections import defaultdict
