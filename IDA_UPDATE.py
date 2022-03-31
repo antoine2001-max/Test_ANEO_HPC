@@ -7,7 +7,7 @@ from collections import defaultdict
 from itertools import cycle
 from typing import Dict, Tuple
 import random
-import numpy as np
+
 
 filename = "smallRandom.json"
 n_cores = 2
