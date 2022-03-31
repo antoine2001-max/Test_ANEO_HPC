@@ -10,7 +10,7 @@ from typing import Dict, Tuple
 import random
 
 filename = "./Downloads/smallRandom.json"
-
+n_cores = 2
 
 def n2letter(n):
     '''0 to 'a', 1 to 'b', ... '''
@@ -293,7 +293,7 @@ def verify(node):
     return (100*(score - best_time)/best_time)
 
 
-graph = Graph(filename, 6, 1)
+graph = Graph(filename, n_cores, 1)
 final_node = ida_star()
 
 
