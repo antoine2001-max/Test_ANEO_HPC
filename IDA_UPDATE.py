@@ -257,7 +257,7 @@ def search(stack, bound, depth):
     return False
 
 
-def ida_star(depth=np.inf):
+def ida_star(depth=float('inf'):
     bound = graph.h(graph.root)*2
     stack = [graph.root]
     t = search(stack, bound, depth)
