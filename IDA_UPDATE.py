@@ -277,7 +277,7 @@ def cycle(lst):
 
 tps_moyen = 0    
 
-h=1
+h=5
     
 for k in range(h):
     tps1 = time.time()
