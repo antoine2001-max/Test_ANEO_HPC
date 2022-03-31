@@ -4,6 +4,7 @@ import math
 import json
 from copy import deepcopy
 import bisect
+import time
 
 # from config import filename, n_cores
 filename = "./smallRandom.json"
@@ -212,7 +213,7 @@ class Node():
     def compute_g(self):
         return max([core["task_end_time"] for core in self.cores.values()])
 
-        import time
+
 import queue
 import random as rd
 import sys
@@ -268,6 +269,8 @@ class IDA_star():
                 mini = score
             self.path.pop()
         return False, mini
+    
+    
             
 #tps_moyen = 0    
 
