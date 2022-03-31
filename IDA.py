@@ -280,7 +280,7 @@ class IDA_star():
             
 tps_moyen = 0    
 
-h=5
+h=1
     
 for k in range(h):
     tps1 = time.time()
