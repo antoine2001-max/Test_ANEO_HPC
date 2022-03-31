@@ -293,7 +293,7 @@ tps_moyen = tps_moyen/h
 
 print(tps_moyen)  
 
-print("----Terminé----")
+print("----Termine----")
 
 
 
