@@ -12,7 +12,7 @@ import time
 filename = "./smallComplex.json"
 #filename = "./MediumComplex.json"
 
-n_cores = 2
+n_cores = 3
 
 print(n_cores)
 print(filename)
