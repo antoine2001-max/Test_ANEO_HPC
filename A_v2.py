@@ -316,18 +316,23 @@ class A_star():
 
 # A_star(root = Node(), graph=graph).find_best_path()
 
-
 root = Node()
-a_star = A_star(root=root, graph=graph)
 
-with cProfile.Profile() as pr:
+h=1
+tps_moyen = 0
+
+for i in range(h):
+    
+    start = time.time()
+    a_star = A_star(root=root, graph=graph)
+
     final_node = a_star.find_best_path(max_time=10)
-
+    end = time.time()
+    tps_moyen += (end-start)
+    
+tps_moyen = tps_moyen/h
+    
 print(final_node)
-stats = pstats.Stats(pr)
-stats.sort_stats(pstats.SortKey.TIME)
-stats.dump_stats(filename='profiling.prof')
-stats.print_stats()
 
 
 schedule = final_node.schedule
