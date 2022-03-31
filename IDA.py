@@ -11,7 +11,7 @@ import time
 filename = "./smallRandom.json"
 #filename = "./smallComplex.json"
 #filename = "./MediumComplex.json"
-n_cores = 4
+n_cores = 3
 
 print(n_cores)
 print(filename)
@@ -91,7 +91,7 @@ class Graph:
         self.tasks_to_sbl = task2sbl
         self.tasks_to_parent = task2parents
         self.tasks_to_child = task2childs
-        self.n_cores = 2
+        self.n_cores = n_cores
         self.nodes = list()
 
 graph = Graph()
