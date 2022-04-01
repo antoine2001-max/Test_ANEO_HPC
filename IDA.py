@@ -8,11 +8,11 @@ import time
 
 
 # from config import filename, n_cores
-#filename = "./smallRandom.json"
-filename = "./smallComplex.json"
+filename = "./smallRandom.json"
+#filename = "./smallComplex.json"
 #filename = "./MediumComplex.json"
 
-n_cores = 3
+n_cores = 2
 
 print(n_cores)
 print(filename)
@@ -280,7 +280,7 @@ class IDA_star():
             
 tps_moyen = 0    
 
-h=1
+h=5
     
 for k in range(h):
     tps1 = time.time()
