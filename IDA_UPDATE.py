@@ -279,7 +279,7 @@ for x in [2,3,4,5,6,7,8,9] :
 
     tps_moyen = 0    
 
-    h=15
+    h=10
 
     for k in range(h):
         tps1 = time.time()
