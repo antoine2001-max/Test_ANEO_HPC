@@ -9,7 +9,7 @@ from typing import Dict, Tuple
 import random
 import time
 
-for x in [5] :
+for x in [2,3,4,5,6,7,8,9] :
     
     filename = "smallRandom.json"
     n_cores = x
