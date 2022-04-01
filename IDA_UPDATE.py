@@ -9,7 +9,7 @@ from typing import Dict, Tuple
 import random
 import time
 
-for x in [6,7,8,9] :
+for x in [5] :
     
     filename = "smallRandom.json"
     n_cores = x
@@ -279,7 +279,7 @@ for x in [6,7,8,9] :
 
     tps_moyen = 0    
 
-    h=5
+    h=15
 
     for k in range(h):
         tps1 = time.time()
